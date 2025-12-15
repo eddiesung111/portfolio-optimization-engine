@@ -24,7 +24,7 @@ def plot_efficient_frontier(mean_returns, cov_matrix, optimal_weights, risk_free
     plt.colorbar(label='Sharpe Ratio')
 
     opt_ret, opt_vol, opt_sharpe = calculate_portfolio_performance(optimal_weights, mean_returns, cov_matrix, risk_free_rate)
-    plt.scatter(opt_vol, opt_ret, c= 'red', s = 300, marker = '*', label = f'Optimal (Sharpe: {opt_sharpe:.2f})')
+    plt.scatter(opt_vol, opt_ret, c= 'red', s = 200, marker = 'x', label = f'Optimal (Sharpe: {opt_sharpe:.2f})')
 
     plt.title('Efficient Frontier: Monte Carlo Simulation')
     plt.xlabel('Volatility (Annual Standard Deviation)')
