@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
-from datetime import datetime, timedelta
+from datetime import datetime
 
 from src.data_loader import get_stock_data
 from src.portfolio_optimizer import optimize_portfolio
